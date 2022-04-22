@@ -4,10 +4,6 @@ import cv2
 cap = cv2.VideoCapture("ball.mp4")
 
 
-class KalmanFilter(object):
-
-
-
 od = OrangeDetector()
 
 kf = KalmanFilter()
