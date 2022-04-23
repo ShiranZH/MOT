@@ -40,6 +40,8 @@ class KalmanFilter(object):
         # Initial Covariance Matrix
         self.P = np.eye(self.A.shape[1])
 
+    def getxy(self):
+        return self.x[0:2]
 
     def predict(self):
         # Update time state
